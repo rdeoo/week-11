@@ -32,26 +32,24 @@
 // // prompt always returns a string
 // let result = circleArea(userValue);
 // if (result != undefined) {
-//   resultPara.textContent = 
+//   resultPara.textContent =
 //     `The area of a cricle with radius ${userValue} is ${result.toFixed(2)}`
 //   ;
 // }
 
-let myList = ['bread', 'cheese', 'green pepper']
+let myList = ["bread", "cheese", "green pepper"];
 
-function populatelist(shoppingList)
-{
-// 1. select and store a ref to the ul -> queryselector
-const ullist = document.querySelector(".shopping")
-// 2. loop through the shoppinglist - > for loop
-for(let item of shoppingList){
-
-// 3. create an li -> createElement
-const newLi = document.createElement("li")
-// 4. appened the li to the ul -> parent.appenedChild(child)
-ullist.appendChild(newLi)
-// 5. update the textContent of the li with the array item
-newLi.textContent = item
+function populatelist(shoppingList) {
+  // 1. select and store a ref to the ul -> queryselector
+  const ullist = document.querySelector(".shopping");
+  // 2. loop through the shoppinglist - > for loop
+  for (let item of shoppingList) {
+    // 3. create an li -> createElement
+    const newLi = document.createElement("li");
+    // 4. appened the li to the ul -> parent.appenedChild(child)
+    ullist.appendChild(newLi);
+    // 5. update the textContent of the li with the array item
+    newLi.textContent = item;
+  }
 }
-}
-populatelist(myList)
+populatelist(myList);

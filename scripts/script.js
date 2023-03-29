@@ -53,3 +53,14 @@ function populatelist(shoppingList) {
   }
 }
 populatelist(myList);
+
+
+function squareListMaker()
+{
+  const ullist = document.querySelector(".shopping");
+  //remove circleList class on 
+  ullist.classList.remove("circleList");
+  ullist.classList.add("squareList");
+}
+
+squareListMaker()

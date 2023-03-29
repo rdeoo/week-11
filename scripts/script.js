@@ -64,3 +64,23 @@ function squareListMaker()
 }
 
 squareListMaker()
+
+
+
+function changeTextGreen()
+{
+  // 1. find all li -> querySelectorAll()
+  const listitems = document.querySelectorAll(".shopping li")
+  // 2. Loop through all the li s
+  for(let item of listitems)
+  {
+    if (item.textContent.includes("green"))
+      // item.setAttribute("style", "color:green")
+      item.classList.add("greentext")
+  }
+    // 3. get the textContent 
+      // 4. Check if textCpntent contains the word green using .include
+        //5. if it does, change that li to green tezt color
+}
+
+changeTextGreen()
